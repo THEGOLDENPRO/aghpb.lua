@@ -3,7 +3,7 @@
   # 🌕 aghpb.lua 📚
   <sub>Lua API wrapper for the anime girls holding programming books [API](https://api.devgoldy.xyz/aghpb/v1/docs)</sub>
 
-  <!-- [![npm](https://img.shields.io/npm/v/aghpb?style=flat)](https://www.npmjs.com/package/aghpb) -->
+  [![LuaRocks](https://img.shields.io/luarocks/v/THEGOLDENPRO/aghpb)](https://luarocks.org/modules/THEGOLDENPRO/aghpb)
 
 </div>
 
@@ -21,7 +21,7 @@
 ```sh
 luarocks install aghpb
 ```
-*The LuaRocks package can be located [**here**]().*
+*The LuaRocks package can be located [**here**](https://luarocks.org/modules/THEGOLDENPRO/aghpb).*
 
 **or** (from source)
 ```sh
