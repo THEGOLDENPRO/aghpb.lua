@@ -15,7 +15,7 @@
 
 <br>
 
-> #### BTW this is my first ever Lua code, so I would be happy to accept feedback and contributions.
+> #### This is my first ever Lua code, so I would be happy to accept feedback and contributions.
 
 ## Install
 ```typescript
