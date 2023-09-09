@@ -9,7 +9,7 @@
 
 <div align="center">
 
-  <img src="./assets/book_1.png" width="400px">
+  <img src="./assets/book_1.png" width="500px">
 
 </div>
 
