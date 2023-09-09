@@ -18,10 +18,17 @@
 > #### This is my first ever Lua code, so I would be happy to accept feedback and contributions.
 
 ## Install
-```typescript
+```sh
 luarocks install aghpb
 ```
-The LuaRocks package can be located [**here**]().
+*The LuaRocks package can be located [**here**]().*
+
+**or** (from source)
+```sh
+git clone https://github.com/THEGOLDENPRO/aghpb.lua/
+cd aghpb.lua
+sudo luarocks make 
+```
 
 ## Examples
 This is how you may retrieve a random anime girl holding a programming book:
