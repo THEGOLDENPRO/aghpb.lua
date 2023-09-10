@@ -1,8 +1,8 @@
 package = "aghpb"
-version = "1.0-0"
+version = "1.1-0"
 source = {
     url = "git://github.com/THEGOLDENPRO/aghpb.lua",
-    tag = "1.0",
+    tag = "1.1",
 }
 description = {
     summary = "Anime girls holding programming books API wrapper for 🌕 Lua.",
