@@ -1,8 +1,9 @@
 local aghpb = {}
 local json = require('cjson')
 local http = require("socket.http")
+local urlencode = require("urlencode")
 
-local BASE_URL <const> = "https://api.devgoldy.xyz/aghpb"
+local BASE_URL = "http://api.devgoldy.xyz/aghpb"
 
 local Book = { name = nil, category = nil, date_added = nil, image_bytes = nil }
 Book.__index = Book
@@ -30,15 +31,14 @@ end
 --- Uses the ``/v1/random`` endpoint.
 ---
 --- @param category? string
+--- @return Book # Book data.
 function aghpb.random(category)
     category = category or nil
 
     local url = BASE_URL .. "/v1/random"
 
     if category ~= nil then
-        -- This implementation sucks, it will break when you use categories like 'C++' and also may be a slight security vulnerability.
-        -- If you know how to do this better and safer please countribute, idk how to use the Lua URI libaries otherwise I would have used them to safely parse.
-        url = url .. "?category=" .. category
+        url = url .. "?category=" .. urlencode.encode_url(category)
     end
 
     local body, code, headers, _ = http.request(url)
