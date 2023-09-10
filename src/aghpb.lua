@@ -3,7 +3,7 @@ local json = require('cjson')
 local http = require("socket.http")
 local urlencode = require("urlencode")
 
-local BASE_URL = "http://api.devgoldy.xyz/aghpb"
+local BASE_URL = "https://api.devgoldy.xyz/aghpb"
 
 local Book = { name = nil, category = nil, date_added = nil, image_bytes = nil }
 Book.__index = Book
