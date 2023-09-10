@@ -13,8 +13,11 @@ description = {
     license = "MIT"
 }
 dependencies = {
-    "lua >= 5.4",
-    "lua-cjson"
+    "lua >= 5.3",
+    "lua-cjson",
+    "luasocket",
+    "luasec",
+    "urlencode"
 }
 build = {
     type = "builtin",
