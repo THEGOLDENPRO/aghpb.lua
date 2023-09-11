@@ -1,8 +1,8 @@
 package = "aghpb"
-version = "1.2-0"
+version = "1.2.1-0"
 source = {
     url = "git://github.com/THEGOLDENPRO/aghpb.lua",
-    tag = "1.2",
+    tag = "1.2.1",
 }
 description = {
     summary = "Anime girls holding programming books API wrapper for 🌕 Lua.",
@@ -22,6 +22,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        ["aghpb"] = "src/aghpb/init.lua",
+        aghpb = "src/aghpb/init.lua",
     }
 }
