@@ -22,6 +22,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        aghpb = "src/aghpb.lua",
+        ['aghpb'] = "src/aghpb/init.lua",
     }
 }
