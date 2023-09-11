@@ -1,7 +1,7 @@
 package = "aghpb"
 version = "1.2-0"
 source = {
-    url = "https://github.com/THEGOLDENPRO/aghpb.lua",
+    url = "git://github.com/THEGOLDENPRO/aghpb.lua",
     tag = "1.2",
 }
 description = {
