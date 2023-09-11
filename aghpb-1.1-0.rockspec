@@ -19,7 +19,6 @@ dependencies = {
     "luasec",
     "urlencode"
 }
-
 build = {
     type = "builtin",
     modules = {
