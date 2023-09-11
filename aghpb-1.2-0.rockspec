@@ -1,7 +1,7 @@
 package = "aghpb"
 version = "1.2-0"
 source = {
-    url = "https://github.com/THEGOLDENPRO/aghpb.lua/archive/refs/tags/1.2.tar.gz",
+    url = "https://github.com/THEGOLDENPRO/aghpb.lua",
     tag = "1.2",
 }
 description = {
@@ -22,6 +22,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        ['aghpb'] = "src/aghpb/init.lua",
+        ["aghpb"] = "src/aghpb/init.lua",
     }
 }
