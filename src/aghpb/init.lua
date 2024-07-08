@@ -19,7 +19,7 @@ local Book = {
     image_bytes = nil
 }
 
---- @param id integer
+--- @param id string
 --- @param name string
 --- @param category string
 --- @param date_added string
