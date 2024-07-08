@@ -34,6 +34,38 @@ sudo luarocks make
 ```
 
 ## Examples
-For examples see [examples](./examples)
+This is how you may retrieve a random anime girl holding a programming book:
+```lua
+aghpb = require("aghpb")
+
+local book = aghpb.random()
+
+print(book.name)
+print(book.category)
+print(book.date_added)
+
+local file = assert(io.open("./anime_girl.png", "wb"))
+file:write(book.image_bytes)
+file:close()
+```
+You can also retrieve specific categories of anime girls holding programming books like so:
+```lua
+aghpb.random("lua")
+```
+
+<br>
+
+This is how you may retrieve a list of available categories:
+```lua
+aghpb = require("aghpb")
+
+local categories = aghpb.categories()
+
+for key, value in pairs(categories) do
+    print(key, value)
+end
+```
+
+For more examples see the [examples](./examples) folder.
 
 Made using my API at 👉 https://api.devgoldy.xyz/aghpb/v1/
