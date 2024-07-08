@@ -66,4 +66,6 @@ for key, value in pairs(categories) do
 end
 ```
 
+For more examples see the [examples](./examples) folder.
+
 Made using my API at 👉 https://api.devgoldy.xyz/aghpb/v1/
