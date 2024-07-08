@@ -6,13 +6,13 @@ local urlencode = require("urlencode")
 local BASE_URL = "https://api.devgoldy.xyz/aghpb"
 
 --- @class Book
---- @field id integer
+--- @field id string
 --- @field name string
 --- @field category string
 --- @field date_added string
 --- @field image_bytes any
 local Book = {
-    id = 0,
+    id = "",
     name = "",
     category = "",
     date_added = "",
