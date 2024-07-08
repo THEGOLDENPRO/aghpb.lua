@@ -39,7 +39,7 @@ function Book:new(id, name, category, date_added, image_bytes)
 end
 
 ---
---- Returns a random anime girl holding a programming book. 
+--- Returns a random anime girl holding a programming book.
 ---
 --- Uses the ``/v1/random`` endpoint.
 ---
@@ -81,7 +81,7 @@ function aghpb.get(id)
 
     if code == 404 then
         error(json.decode(body).message)
-    end 
+    end
 
     return Book:new(
         headers["book-search-id"],
@@ -93,7 +93,7 @@ function aghpb.get(id)
 end
 
 ---
---- Returns a table for the given query.
+--- Returns a table of book search results.
 ---
 --- @param query? string
 --- @param category? string

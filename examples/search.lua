@@ -1,7 +1,8 @@
 aghpb = require("aghpb")
 
-local categories = aghpb.search("lua")
+local books = aghpb.search("lua")
 
-for key, value in pairs(categories) do
-    print(key, value["name"])
-end
+local book = aghpb.get(books[1]["search_id"])
+
+print(book.id)
+print(book.name)
