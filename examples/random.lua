@@ -1,4 +1,4 @@
-aghpb = require("aghpb")
+aghpb = require("src.aghpb.init")
 
 local book = aghpb.random()
 

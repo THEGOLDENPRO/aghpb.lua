@@ -6,16 +6,16 @@ local urlencode = require("urlencode")
 local BASE_URL = "https://api.devgoldy.xyz/aghpb"
 
 --- @class Book
---- @field id string
---- @field name string
---- @field category string
---- @field date_added string
+--- @field id string | nil
+--- @field name string | nil
+--- @field category string | nil
+--- @field date_added string | nil
 --- @field image_bytes any
 local Book = {
-    id = "",
-    name = "",
-    category = "",
-    date_added = "",
+    id = nil,
+    name = nil,
+    category = nil,
+    date_added = nil,
     image_bytes = nil
 }
 
@@ -72,6 +72,8 @@ end
 ---
 --- Returns a Book for the given id.
 ---
+--- Uses the ``/v1/get/id`` endpoint.
+---
 --- @param id? string
 --- @return Book
 function aghpb.get(id)
@@ -94,6 +96,8 @@ end
 
 ---
 --- Returns a table of book search results.
+---
+--- Uses the ``/v1/search`` endpoint.
 ---
 --- @param query? string
 --- @param category? string
